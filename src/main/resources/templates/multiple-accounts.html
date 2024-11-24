@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Multiple Accounts</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+<h1>Multiple Accounts Found</h1>
+<ul>
+    <li th:each="account : ${accounts}">
+        <p>Account Holder: <span th:text="${account.accountHolder}"></span></p>
+        <p>Account Number: <span th:text="${account.accountNumber}"></span></p>
+        <p>Balance: R<span th:text="${account.balance}"></span></p>
+    </li>
+</ul>
+</body>
+</html>
