@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Account Created</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+<h1 th:text="${message}"></h1>
+<p>Account Holder: <span th:text="${account.accountHolder}"></span></p>
+<p>Account Number: <span th:text="${account.accountNumber}"></span></p>
+<p>Balance: R<span th:text="${account.balance}"></span></p>
+</body>
+</html>

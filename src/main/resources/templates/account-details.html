@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Account Details</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Account Details</h1>
+  <p><strong>Account Number:</strong> <span th:text="${account.accountNumber}"></span></p>
+  <p><strong>Account Holder:</strong> <span th:text="${account.accountHolder}"></span></p>
+  <p><strong>Balance:</strong> <span th:text="${account.balance}"></span></p>
+  <a href="/" class="btn">Back to Accounts List</a>
+</div>
+</body>
+</html>
